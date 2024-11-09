@@ -1,0 +1,132 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/cicrcle_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ModelSelectionActivity"
+    android:padding="10dp"
+    android:gravity="center">
+
+    <!-- Title for Model Selection Screen -->
+    <TextView
+        android:id="@+id/modelSelectionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/model_selection_title"
+        android:textSize="@dimen/title_main"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="@dimen/margin_lg"
+        android:layout_marginLeft="10dp"/>
+
+    <!-- Phone Model Image -->
+    <ImageView
+        android:id="@+id/phoneImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="Phone Model Image"
+        android:layout_gravity="center"/>
+
+    <!-- Instruction Text for Model Selection -->
+    <TextView
+        android:id="@+id/instructionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/model_selection_desc"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_gravity="start"/>
+
+    <!-- ListView for Phone Models with Prices -->
+    <ListView
+        android:id="@+id/modelListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+    <!-- Storage Selection Text -->
+    <TextView
+        android:id="@+id/storageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Storage"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_gravity="start"/>
+
+    <!-- Storage Selection RadioGroup -->
+    <RadioGroup
+        android:id="@+id/storageSelectionGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_gravity="start">
+        <!-- Storage options -->
+        <RadioButton android:id="@+id/storage64GB" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="64GB"/>
+        <RadioButton android:id="@+id/storage128GB" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="128GB"/>
+        <RadioButton android:id="@+id/storage256GB" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="256GB"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Color Selection Text -->
+        <TextView
+            android:id="@+id/colorTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Color"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_gravity="start"/>
+
+        <!-- Color Selection RadioGroup -->
+        <Spinner
+            android:id="@+id/colorSelectionSpinner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="start"
+            android:background="@drawable/spinner_dropdown"
+            android:layout_marginLeft="@dimen/margin_sm"/>
+
+    </LinearLayout>
+    <!-- Proceed Button -->
+    <Button
+        android:id="@+id/proceedButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Proceed"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="60dp"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

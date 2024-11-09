@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_sm"
+    android:background="@drawable/cicrcle_bg"
+    android:gravity="center">
+
+    <!-- Title: Payment Method -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/payment_title"
+        android:textColor="#000000"
+        android:textSize="@dimen/title_main"
+        android:textStyle="bold"
+        android:paddingTop="30dp"
+        android:paddingBottom="20dp" />
+
+    <!-- Payment Method Options -->
+    <RadioGroup
+        android:id="@+id/paymentMethodRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/creditCardRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit Card"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/debitCardRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Debit Card"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/applePayRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apple Pay"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/googlePayRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Google Pay"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <!-- Card Number Input -->
+    <EditText
+        android:id="@+id/cardNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Card Number"
+        android:inputType="text|number"
+        android:visibility="gone"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Expiry Date Input -->
+    <EditText
+        android:id="@+id/expiryDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expiry Date (MM/YY)"
+        android:inputType="text|number"
+        android:visibility="gone"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Confirm Payment Button -->
+    <Button
+        android:id="@+id/confirmPaymentButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Proceed"
+        android:backgroundTint="@android:color/black"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:padding="10dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

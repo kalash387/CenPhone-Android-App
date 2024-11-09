@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- First Circle -->
+    <item
+        android:gravity="top|right"
+        android:translationX="-700dp"
+        android:top="-300dp"
+        android:right="-300dp">
+        <shape android:shape="oval">
+            <solid android:color="#80AAAAAA" /> <!-- 50% transparent #aaa -->
+            <size android:width="600dp" android:height="600dp" />
+        </shape>
+    </item>
+
+    <!-- Second Circle -->
+    <item
+        android:gravity="top|right"
+        android:translationX="-700dp"
+        android:top="-300dp"
+        android:right="-300dp">
+        <shape android:shape="oval">
+            <solid android:color="#80AAAAAA" /> <!-- 50% transparent #aaa -->
+            <size android:width="500dp" android:height="500dp" />
+        </shape>
+    </item>
+
+</layer-list>

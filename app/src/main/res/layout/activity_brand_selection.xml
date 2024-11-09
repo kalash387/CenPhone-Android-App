@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/cicrcle_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_sm">
+
+    <TextView
+        android:id="@+id/helloText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/greet"
+        android:textSize="@dimen/title_main"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="92dp"
+        android:gravity="start"/>
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcomeText"
+        android:textSize="20sp"
+        android:textColor="@color/gray_text"
+        android:layout_marginTop="-8dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/instructionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/brand_sel_desc"
+        android:textSize="@dimen/reg_text"
+        android:textColor="#666666"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="@dimen/margin_sm" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_weight="1">
+
+    <LinearLayout
+        android:id="@+id/brandContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/padding_sm">
+
+    <!-- iPhone Option -->
+    <LinearLayout
+        android:id="@+id/iphoneOption"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/padding_sm"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/rounded_border"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/iphoneImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/iphone"
+            android:scaleType="centerCrop"
+            android:contentDescription="iPhone"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iPhone"
+            android:textSize="18sp"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <!-- Samsung Option -->
+    <LinearLayout
+        android:id="@+id/samsungOption"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/padding_sm"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/rounded_border"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/samsungImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/samsung"
+            android:scaleType="centerCrop"
+            android:contentDescription="Samsung"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Samsung"
+            android:textSize="18sp"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <!-- Google Pixel Option -->
+    <LinearLayout
+        android:id="@+id/googleOption"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/padding_sm"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/rounded_border"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/googlePixelImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/pixel"
+            android:scaleType="centerCrop"
+            android:contentDescription="Google Pixel"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Google Pixel"
+            android:textSize="18sp"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+</LinearLayout>
+    </ScrollView>
+
+    </LinearLayout>

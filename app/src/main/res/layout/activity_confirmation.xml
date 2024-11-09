@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/cicrcle_bg"
+    android:gravity="center">
+
+    <!-- Confirmation Message -->
+    <TextView
+        android:id="@+id/confirmationMessageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirmation_text"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="30dp"
+        android:paddingBottom="24dp" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:layout_marginVertical="@dimen/margin_sm"/>
+
+    <!-- Order Summary Title -->
+    <TextView
+        android:id="@+id/orderSummaryTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Summary"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:paddingTop="8dp"
+        android:layout_gravity="start"/>
+
+    <!-- Order Summary Details -->
+    <TextView
+        android:id="@+id/orderSummaryTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/reg_text"
+        android:textColor="#333333"
+        android:paddingTop="12dp"
+        android:lineSpacingExtra="4dp"/>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:layout_marginVertical="@dimen/margin_sm"/>
+
+    <!-- Finish Button -->
+    <Button
+        android:id="@+id/finishButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:elevation="4dp"/>
+</LinearLayout>

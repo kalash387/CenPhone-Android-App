@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Milestone-2</string>
+<!--    main_activity strings-->
+    <string name="logo_desc">Effortless smartphone shopping at your fingertips. Explore the latest brands, models, and delivery options.</string>
+
+<!--    activity_brand_selection strings-->
+    <string name="greet">Hello!</string>
+    <string name="welcomeText">Welcome to CenPhone!</string>
+    <string name="brand_sel_desc">Order the latest smartphones from CenPhone! Choose among the brands—iPhone, Samsung, or Google Pixel—and get it delivered to your doorstep!</string>
+
+    <!--    activity_model_selection strings-->
+    <string name="model_selection_title">Select Your Model</string>
+    <string name="model_selection_desc">Choose your preferred model from the list below</string>
+
+    <!--    activity_payment strings-->
+    <string name="payment_title">Payment</string>
+
+    <!--    activity_checkout_view strings-->
+    <string name="checkout_title">Checkout</string>
+
+    <!--    activity_confirmation strings-->
+    <string name="confirmation_text">Your phone order was successfully completed!</string>
+
+    <!-- iPhone Models -->
+    <string-array name="iphone_models">
+        <item>iPhone 14</item>
+        <item>iPhone 15</item>
+        <item>iPhone 15 Pro</item>
+    </string-array>
+
+    <!-- Samsung Models -->
+    <string-array name="samsung_models">
+        <item>Galaxy S23</item>
+        <item>Galaxy Z Fold 5</item>
+        <item>Galaxy Z Fold 6</item>
+    </string-array>
+
+    <!-- Google Pixel Models -->
+    <string-array name="pixel_models">
+        <item>Google Pixel 8</item>
+        <item>Google Pixel 7 Pro</item>
+        <item>Google Pixel 6</item>
+    </string-array>
+</resources>

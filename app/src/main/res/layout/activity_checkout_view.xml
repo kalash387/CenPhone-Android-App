@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/cicrcle_bg"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/checkout_title"
+            android:textColor="#000000"
+            android:textSize="@dimen/title_main"
+            android:textStyle="bold"
+            android:paddingBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/sharp_border"
+            android:padding="@dimen/padding_sm"
+            android:layout_marginRight="32dp"
+            android:paddingBottom="20dp"
+            android:layout_marginBottom="32dp">
+
+            <TextView
+                android:id="@+id/brandTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Brand: "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/modelTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Model: "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/priceTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price: "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/storageTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Storage: "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/colorTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Color: "
+                android:textColor="#000000"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/confirmButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:backgroundTint="@android:color/black"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-medium"
+            android:padding="12dp"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
